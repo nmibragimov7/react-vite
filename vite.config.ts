@@ -1,14 +1,14 @@
 import {defineConfig} from 'vite'
 import react from '@vitejs/plugin-react'
-import legacy from '@vitejs/plugin-legacy'
+// import legacy from '@vitejs/plugin-legacy'
 
 // https://vitejs.dev/config/
 export default defineConfig({
     plugins: [
         react(),
-        legacy({
-            targets: ['not IE >= 11'],
-            additionalLegacyPolyfills: ['whatwg-fetch']
-        }),
+        // legacy({
+        //     targets: ['not IE >= 11'],
+        //     additionalLegacyPolyfills: ['whatwg-fetch']
+        // }),
     ],
 })
